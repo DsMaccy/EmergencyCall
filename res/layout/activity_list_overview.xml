@@ -7,12 +7,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+<LinearLayout 
+    android:layout_weight="9"
+    android:layout_height="0dp"
+    android:layout_width="fill_parent"
     android:weightSum="2"
     android:orientation="horizontal"
     tools:context="com.rocketmail.dsmacy.emergencycall.ListOverviewActivity" >
     
     <ListView
-    	android:id="@+id/ListView1"
+    	android:id="@+id/PermittedCallersList"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="fill_parent"
@@ -21,11 +28,39 @@
     </ListView>
 
     <ListView
-        android:id="@+id/ListView2"
+        android:id="@+id/EmergencyCallerList"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="fill_parent"
         android:orientation="vertical" >
     </ListView>
-    
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/NewPermittedCallerButton"
+        android:text="@string/NewPermittedCallerButton"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:onClick="AddNewPermittedCaller">
+        
+    </Button>
+        <Button
+        android:id="@+id/NewEmergencyContactButton"
+        android:text="@string/NewEmergencyContactButton"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:onClick="AddNewEmergencyContact">
+    </Button>
+</LinearLayout>
+
 </LinearLayout>

@@ -4,5 +4,13 @@
     <string name="app_name">EmergencyCall</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="NewPermittedCallerButton">Add New Caller</string>
+    <string name="NewEmergencyContactButton">Add New Contact</string>
+    <string name="title_activity_add_new_permitted_caller">AddNewPermittedCallerActivity</string>
+    <string name="phone_permission">Access Phone</string>
+    <string name="title_activity_add_new_emergency_contact">AddNewEmergencyContactActivity</string>
+    <string name="title_activity_view_emergency_contact">ViewEmergencyContactActivity</string>
+    <string name="title_activity_view_permitted_caller">ViewPermittedCallerActivity</string>
+    <string name="title_activity_edit_contact">EditContactActivity</string>
 
 </resources>

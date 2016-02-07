@@ -5,8 +5,14 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="21" />
+
+    <permission
+        android:name="@string/phone_permission"
+        android:permissionGroup="android.permission-group.CALL"
+        android:protectionLevel="Use of Phone to make calls" >
+    </permission>
 
     <application
         android:allowBackup="true"
@@ -21,6 +27,26 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewPermittedCallerActivity"
+            android:label="@string/title_activity_add_new_permitted_caller" >
+        </activity>
+        <activity
+            android:name=".NewEmergencyContactActivity"
+            android:label="@string/title_activity_add_new_emergency_contact" >
+        </activity>
+        <activity
+            android:name=".ViewEmergencyContactActivity"
+            android:label="@string/title_activity_view_emergency_contact" >
+        </activity>
+        <activity
+            android:name=".ViewPermittedCallerActivity"
+            android:label="@string/title_activity_view_permitted_caller" >
+        </activity>
+        <activity
+            android:name=".EditContactActivity"
+            android:label="@string/title_activity_edit_contact" >
         </activity>
     </application>
 
