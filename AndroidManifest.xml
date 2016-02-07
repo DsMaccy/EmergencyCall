@@ -6,13 +6,12 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="23" />
 
     <permission
-        android:name="@string/phone_permission"
+        android:name="com.rocketmail.dsmacy.ViewEmergencyContactActivity"
         android:permissionGroup="android.permission-group.CALL"
-        android:protectionLevel="Use of Phone to make calls" >
-    </permission>
+        android:protectionLevel="signature"/>
 
     <application
         android:allowBackup="true"

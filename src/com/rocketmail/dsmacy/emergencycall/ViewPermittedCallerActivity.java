@@ -45,8 +45,4 @@ public class ViewPermittedCallerActivity extends Activity
 	{
 		Log.i("Fill", "Edit method in View Permitted Caller called");
 	}
-	public void call(View v)
-	{
-		Log.i("Fill", "Call method in View Permitted Caller called");
-	}
 }
