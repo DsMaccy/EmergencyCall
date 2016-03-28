@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,59 @@
     tools:context="com.rocketmail.dsmacy.emergencycall.NewEmergencyContactActivity" >
 
     <TextView
+        android:id="@+id/NewEmergencyContactTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/NewEmergencyContactButton"
+        android:textColor="#000000"
+        android:textSize="@dimen/activity_title" />
+        
+    <EditText
+        android:id="@+id/NewEmergencyContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nameField" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/NewEmergencyContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phoneNumberField" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical|center|start|end"
+        android:baselineAligned="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"> 
+	    <Button
+	        android:id="@+id/NewEmergencyContactCancel"
+	        android:onClick="cancel()"
+	        android:layout_weight="0.33"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="start"
+	        android:text="@string/cancel" 
+	        style="@attr/buttonBarButtonStyle"/>
+		<Button
+		    android:id="@+id/NewEmergencyContactClear"
+	        android:onClick="clear()"
+	        android:layout_weight="0.33"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/clear" 
+	        style="@attr/buttonBarButtonStyle"/>
+		<Button
+	        android:id="@+id/NewEmergencyContactSubmit"
+	        android:onClick="submit()"
+	        android:layout_weight="0.33"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="end"
+	        android:text="@string/submit"
+	        style="@attr/buttonBarButtonStyle"/>
+		
+	</LinearLayout>
+</LinearLayout>

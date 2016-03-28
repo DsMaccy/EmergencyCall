@@ -1,66 +1,90 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:baselineAligned="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:weightSum="10"
-    android:orientation="vertical">
+    android:paddingTop="@dimen/activity_vertical_margin" 
+    android:id="@+id/tabhost">
 
-<LinearLayout 
-    android:layout_weight="9"
-    android:layout_height="0dp"
-    android:layout_width="fill_parent"
-    android:weightSum="2"
-    android:orientation="horizontal"
-    tools:context="com.rocketmail.dsmacy.emergencycall.ListOverviewActivity" >
-    
-    <ListView
-    	android:id="@+id/PermittedCallersList"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
         
-    </ListView>
-
-    <ListView
-        android:id="@+id/EmergencyCallerList"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
-    </ListView>
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:orientation="horizontal" >
-
-    <Button
-        android:id="@+id/NewPermittedCallerButton"
-        android:text="@string/NewPermittedCallerButton"
-        android:layout_width="0dp"
-        android:layout_weight="2"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" 
-        android:onClick="AddNewPermittedCaller">
+    <FrameLayout
+		android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/EmergencyContactList" 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+            >
+            
+		   <TextView
+		       android:id="@+id/EmergencyContactListTitle"
+		       android:layout_width="fill_parent"
+		       android:layout_height="0dp"
+		       android:layout_weight="0.1"
+		       android:text="@string/EmergencyContactListTitle"
+		       android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			<ListView
+			    android:id="@+id/EmergencyCallerList"
+			    android:layout_width="fill_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="0.8"
+			    android:orientation="vertical" />
+			
+			<Button
+			    android:id="@+id/NewEmergencyContactButton"
+			    android:layout_width="fill_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="0.1"
+			    android:onClick="AddNewEmergencyContact"
+			    android:orientation="vertical"
+			    android:text="@string/NewEmergencyContactButton" />
+        </LinearLayout>
         
-    </Button>
-        <Button
-        android:id="@+id/NewEmergencyContactButton"
-        android:text="@string/NewEmergencyContactButton"
-        android:layout_width="0dp"
-        android:layout_weight="2"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" 
-        android:onClick="AddNewEmergencyContact">
-    </Button>
-</LinearLayout>
+        <LinearLayout 
+            android:id="@+id/PermittedCallerList" 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+            >
 
-</LinearLayout>
+			<TextView
+		       android:id="@+id/PermittedCallerListTitle"
+		       android:layout_width="fill_parent"
+		       android:layout_height="0dp"
+		       android:layout_weight="0.1"
+		       android:text="@string/PermittedCallerListTitle"
+		       android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			<ListView
+			    android:id="@+id/PermittedCallersList"
+			    android:layout_width="fill_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="0.8"
+			    android:orientation="vertical" />
+			
+			<Button
+			    android:id="@+id/NewPermittedCallerButton"
+			    android:layout_width="fill_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="0.1"
+			    android:onClick="addNewPermittedCaller"
+			    android:orientation="vertical"
+			    android:text="@string/NewPermittedCallerButton" />
+			
+		</LinearLayout>
+    </FrameLayout>
+</TabHost>

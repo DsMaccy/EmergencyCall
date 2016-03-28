@@ -11,7 +11,10 @@
     <permission
         android:name="com.rocketmail.dsmacy.ViewEmergencyContactActivity"
         android:permissionGroup="android.permission-group.CALL"
-        android:protectionLevel="signature"/>
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
 
     <application
         android:allowBackup="true"
@@ -46,6 +49,10 @@
         <activity
             android:name=".EditContactActivity"
             android:label="@string/title_activity_edit_contact" >
+        </activity>
+        <activity
+            android:name="com.rocketmail.dsmacy.emergencycall.presentation_layer.EmergencyContactListActivity"
+            android:label="@string/title_activity_emergency_contact_list" >
         </activity>
     </application>
 

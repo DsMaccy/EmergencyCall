@@ -12,5 +12,22 @@
     <string name="title_activity_view_emergency_contact">ViewEmergencyContactActivity</string>
     <string name="title_activity_view_permitted_caller">ViewPermittedCallerActivity</string>
     <string name="title_activity_edit_contact">EditContactActivity</string>
+    <string name="PermittedCallerListTitle">Permitted Callers</string>
+    <string name="EmergencyContactListTitle">Emergency Contacts</string>
+    <string name="nameField">Contact Name: </string>
+    <string name="phoneNumberField">Phone Number: </string>
+    <string name="submit">Sumbit</string>
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_emergency_contact_list">EmergencyContactListActivity</string>
+    <string name="ViewEmergencyContactTitle">Emergency Contact</string>
+    <string name="NameTag">Name: </string>
+    <string name="NumberTag">Phone #:&#160;</string>
+    <string name="EditEmergencyContactButton">Edit Contact</string>
+    <string name="CallEmergencyContactButton">Call Contact</string>
+    <string name="ViewPermittedCallerTitle">Permitted Caller</string>
+    <string name="EditPermittedCallerButton">Edit Contact</string>
+    <string name="EditContactTitle">Edit Contact</string>
+    <string name="SaveButton">Save</string>
 
 </resources>

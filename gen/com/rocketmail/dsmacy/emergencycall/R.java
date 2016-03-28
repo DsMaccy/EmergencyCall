@@ -1904,6 +1904,7 @@ containing a value of this type.
  Default text size for action bar title.
          */
         public static final int abc_text_size_title_material_toolbar=0x7f070028;
+        public static final int activity_content=0x7f07004d;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Example customization of dimensions originally defined in res/values/dimens.xml
@@ -1912,6 +1913,7 @@ containing a value of this type.
     
          */
         public static final int activity_horizontal_margin=0x7f07004b;
+        public static final int activity_title=0x7f07004e;
         public static final int activity_vertical_margin=0x7f07004c;
         public static final int disabled_alpha_material_dark=0x7f070001;
         public static final int disabled_alpha_material_light=0x7f070000;
@@ -2003,11 +2005,46 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f020046;
     }
     public static final class id {
-        public static final int EmergencyCallerList=0x7f090051;
-        public static final int NewEmergencyContactButton=0x7f090053;
-        public static final int NewPermittedCallerButton=0x7f090052;
-        public static final int PermittedCallersList=0x7f090050;
-        public static final int action0=0x7f090054;
+        public static final int CallEmergencyContact=0x7f090070;
+        public static final int EditContactName=0x7f09005e;
+        public static final int EditContactNameTag=0x7f09005d;
+        public static final int EditContactNumber=0x7f090060;
+        public static final int EditContactTitle=0x7f09005c;
+        public static final int EditEmergencyContact=0x7f090071;
+        public static final int EditPermittedCaller=0x7f090077;
+        public static final int EmergencyCallerList=0x7f090063;
+        public static final int EmergencyContactList=0x7f090066;
+        public static final int EmergencyContactListTitle=0x7f090062;
+        public static final int NewEmergencyContactButton=0x7f090064;
+        public static final int NewEmergencyContactCancel=0x7f090053;
+        public static final int NewEmergencyContactClear=0x7f090054;
+        public static final int NewEmergencyContactName=0x7f090051;
+        public static final int NewEmergencyContactNumber=0x7f090052;
+        public static final int NewEmergencyContactSubmit=0x7f090055;
+        public static final int NewEmergencyContactTitle=0x7f090050;
+        public static final int NewPermittedCallerButton=0x7f09006a;
+        public static final int NewPermittedCallerCancel=0x7f090059;
+        public static final int NewPermittedCallerClear=0x7f09005a;
+        public static final int NewPermittedCallerName=0x7f090057;
+        public static final int NewPermittedCallerNumber=0x7f090058;
+        public static final int NewPermittedCallerSubmit=0x7f09005b;
+        public static final int NewPermittedCallerTitle=0x7f090056;
+        public static final int PermittedCallerList=0x7f090067;
+        public static final int PermittedCallerListTitle=0x7f090068;
+        public static final int PermittedCallersList=0x7f090069;
+        public static final int SaveContact=0x7f090061;
+        public static final int VEditContactNumberTag=0x7f09005f;
+        public static final int ViewEmergencyContactName=0x7f09006d;
+        public static final int ViewEmergencyContactNameTag=0x7f09006c;
+        public static final int ViewEmergencyContactNumber=0x7f09006f;
+        public static final int ViewEmergencyContactNumberTag=0x7f09006e;
+        public static final int ViewEmergencyContactTitle=0x7f09006b;
+        public static final int ViewPermittedCallerName=0x7f090074;
+        public static final int ViewPermittedCallerNameTag=0x7f090073;
+        public static final int ViewPermittedCallerNumber=0x7f090076;
+        public static final int ViewPermittedCallerNumberTag=0x7f090075;
+        public static final int ViewPermittedCallerTitle=0x7f090072;
+        public static final int action0=0x7f090078;
         public static final int action_bar=0x7f090041;
         public static final int action_bar_activity_content=0x7f090003;
         public static final int action_bar_container=0x7f090040;
@@ -2016,21 +2053,21 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f090022;
         public static final int action_bar_title=0x7f090021;
         public static final int action_context_bar=0x7f090042;
-        public static final int action_divider=0x7f090058;
+        public static final int action_divider=0x7f09007c;
         public static final int action_menu_divider=0x7f090005;
         public static final int action_menu_presenter=0x7f090006;
         public static final int action_mode_bar=0x7f09003e;
         public static final int action_mode_bar_stub=0x7f09003d;
         public static final int action_mode_close_button=0x7f090023;
-        public static final int action_settings=0x7f090061;
+        public static final int action_settings=0x7f090085;
         public static final int activity_chooser_view_content=0x7f090024;
         public static final int alertTitle=0x7f090030;
         public static final int always=0x7f090019;
         public static final int beginning=0x7f09001e;
         public static final int buttonPanel=0x7f09002b;
-        public static final int cancel_action=0x7f090055;
+        public static final int cancel_action=0x7f090079;
         public static final int checkbox=0x7f090039;
-        public static final int chronometer=0x7f09005b;
+        public static final int chronometer=0x7f09007f;
         public static final int collapseActionView=0x7f09001a;
         public static final int contentPanel=0x7f090031;
         public static final int custom=0x7f090037;
@@ -2040,7 +2077,7 @@ containing a value of this type.
         public static final int disableHome=0x7f09000d;
         public static final int edit_query=0x7f090043;
         public static final int end=0x7f09001f;
-        public static final int end_padder=0x7f090060;
+        public static final int end_padder=0x7f090084;
         public static final int expand_activities_button=0x7f090025;
         public static final int expanded_menu=0x7f090038;
         public static final int home=0x7f090000;
@@ -2048,12 +2085,12 @@ containing a value of this type.
         public static final int icon=0x7f090029;
         public static final int ifRoom=0x7f09001b;
         public static final int image=0x7f090026;
-        public static final int info=0x7f09005f;
-        public static final int line1=0x7f090059;
-        public static final int line3=0x7f09005d;
+        public static final int info=0x7f090083;
+        public static final int line1=0x7f09007d;
+        public static final int line3=0x7f090081;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090028;
-        public static final int media_actions=0x7f090057;
+        public static final int media_actions=0x7f09007b;
         public static final int middle=0x7f090020;
         public static final int multiply=0x7f090014;
         public static final int never=0x7f09001c;
@@ -2087,13 +2124,14 @@ containing a value of this type.
         public static final int src_atop=0x7f090016;
         public static final int src_in=0x7f090017;
         public static final int src_over=0x7f090018;
-        public static final int status_bar_latest_event_content=0x7f090056;
+        public static final int status_bar_latest_event_content=0x7f09007a;
         public static final int submit_area=0x7f09004c;
         public static final int tabMode=0x7f09000c;
-        public static final int text=0x7f09005e;
-        public static final int text2=0x7f09005c;
+        public static final int tabhost=0x7f090065;
+        public static final int text=0x7f090082;
+        public static final int text2=0x7f090080;
         public static final int textSpacerNoButtons=0x7f090034;
-        public static final int time=0x7f09005a;
+        public static final int time=0x7f09007e;
         public static final int title=0x7f09002a;
         public static final int title_template=0x7f09002f;
         public static final int topPanel=0x7f09002e;
@@ -2167,33 +2205,46 @@ containing a value of this type.
         public static final int activity_add_new_emergency_contact=0x7f030019;
         public static final int activity_add_new_permitted_caller=0x7f03001a;
         public static final int activity_edit_contact=0x7f03001b;
-        public static final int activity_list_overview=0x7f03001c;
-        public static final int activity_view_emergency_contact=0x7f03001d;
-        public static final int activity_view_permitted_caller=0x7f03001e;
-        public static final int notification_media_action=0x7f03001f;
-        public static final int notification_media_cancel_action=0x7f030020;
-        public static final int notification_template_big_media=0x7f030021;
-        public static final int notification_template_big_media_narrow=0x7f030022;
-        public static final int notification_template_lines=0x7f030023;
-        public static final int notification_template_media=0x7f030024;
-        public static final int notification_template_part_chronometer=0x7f030025;
-        public static final int notification_template_part_time=0x7f030026;
-        public static final int select_dialog_item_material=0x7f030027;
-        public static final int select_dialog_multichoice_material=0x7f030028;
-        public static final int select_dialog_singlechoice_material=0x7f030029;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002a;
+        public static final int activity_emergency_contact_list=0x7f03001c;
+        public static final int activity_list_overview=0x7f03001d;
+        public static final int activity_view_emergency_contact=0x7f03001e;
+        public static final int activity_view_permitted_caller=0x7f03001f;
+        public static final int notification_media_action=0x7f030020;
+        public static final int notification_media_cancel_action=0x7f030021;
+        public static final int notification_template_big_media=0x7f030022;
+        public static final int notification_template_big_media_narrow=0x7f030023;
+        public static final int notification_template_lines=0x7f030024;
+        public static final int notification_template_media=0x7f030025;
+        public static final int notification_template_part_chronometer=0x7f030026;
+        public static final int notification_template_part_time=0x7f030027;
+        public static final int select_dialog_item_material=0x7f030028;
+        public static final int select_dialog_multichoice_material=0x7f030029;
+        public static final int select_dialog_singlechoice_material=0x7f03002a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002b;
     }
     public static final class menu {
         public static final int add_new_emergency_contact=0x7f0c0000;
         public static final int add_new_permitted_caller=0x7f0c0001;
         public static final int edit_contact=0x7f0c0002;
-        public static final int list_overview=0x7f0c0003;
-        public static final int view_emergency_contact=0x7f0c0004;
-        public static final int view_permitted_caller=0x7f0c0005;
+        public static final int emergency_contact_list=0x7f0c0003;
+        public static final int list_overview=0x7f0c0004;
+        public static final int view_emergency_contact=0x7f0c0005;
+        public static final int view_permitted_caller=0x7f0c0006;
     }
     public static final class string {
+        public static final int CallEmergencyContactButton=0x7f0a002b;
+        public static final int EditContactTitle=0x7f0a002e;
+        public static final int EditEmergencyContactButton=0x7f0a002a;
+        public static final int EditPermittedCallerButton=0x7f0a002d;
+        public static final int EmergencyContactListTitle=0x7f0a0020;
+        public static final int NameTag=0x7f0a0028;
         public static final int NewEmergencyContactButton=0x7f0a0018;
         public static final int NewPermittedCallerButton=0x7f0a0017;
+        public static final int NumberTag=0x7f0a0029;
+        public static final int PermittedCallerListTitle=0x7f0a001f;
+        public static final int SaveButton=0x7f0a002f;
+        public static final int ViewEmergencyContactTitle=0x7f0a0027;
+        public static final int ViewPermittedCallerTitle=0x7f0a002c;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0a0001;
@@ -2261,7 +2312,11 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
         public static final int action_settings=0x7f0a0016;
         public static final int app_name=0x7f0a0014;
+        public static final int cancel=0x7f0a0025;
+        public static final int clear=0x7f0a0024;
         public static final int hello_world=0x7f0a0015;
+        public static final int nameField=0x7f0a0021;
+        public static final int phoneNumberField=0x7f0a0022;
         public static final int phone_permission=0x7f0a001a;
         /**  Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
@@ -2270,9 +2325,11 @@ containing a value of this type.
          [CHAR LIMIT=4] 
          */
         public static final int status_bar_notification_info_overflow=0x7f0a0011;
+        public static final int submit=0x7f0a0023;
         public static final int title_activity_add_new_emergency_contact=0x7f0a001b;
         public static final int title_activity_add_new_permitted_caller=0x7f0a0019;
         public static final int title_activity_edit_contact=0x7f0a001e;
+        public static final int title_activity_emergency_contact_list=0x7f0a0026;
         public static final int title_activity_view_emergency_contact=0x7f0a001c;
         public static final int title_activity_view_permitted_caller=0x7f0a001d;
     }

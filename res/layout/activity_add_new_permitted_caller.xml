@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,63 @@
     tools:context="com.rocketmail.dsmacy.emergencycall.NewPermittedCallerActivity" >
 
     <TextView
+        android:id="@+id/NewPermittedCallerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/NewPermittedCallerButton"
+        android:textColor="#000000"
+        android:textSize="@dimen/activity_title" />
+        <!-- 
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" -->
+        
+    <EditText
+        android:id="@+id/NewPermittedCallerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nameField" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/NewPermittedCallerNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phoneNumberField" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical|center|start|end"
+        android:baselineAligned="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        
+	    <Button
+	        android:id="@+id/NewPermittedCallerCancel"
+	        android:onClick="cancel()"
+	        android:layout_weight="0.33"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="start"
+	        android:text="@string/cancel" 
+	        style="@attr/buttonBarButtonStyle"/>
+		<Button
+		    android:id="@+id/NewPermittedCallerClear"
+	        android:onClick="clear()"
+	        android:layout_weight="0.33"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/clear" 
+	        style="@attr/buttonBarButtonStyle"/>
+		<Button
+	        android:id="@+id/NewPermittedCallerSubmit"
+	        android:onClick="submit()"
+	        android:layout_weight="0.33"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="end"
+	        android:text="@string/submit"
+	        style="@attr/buttonBarButtonStyle"/>
+		
+	</LinearLayout>
+</LinearLayout>
